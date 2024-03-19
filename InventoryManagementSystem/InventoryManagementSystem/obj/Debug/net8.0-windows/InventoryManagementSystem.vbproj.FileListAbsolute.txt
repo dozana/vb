@@ -1,0 +1,16 @@
+C:\Users\_\Desktop\vb\InventoryManagementSystem\InventoryManagementSystem\bin\Debug\net8.0-windows\InventoryManagementSystem.exe
+C:\Users\_\Desktop\vb\InventoryManagementSystem\InventoryManagementSystem\bin\Debug\net8.0-windows\InventoryManagementSystem.deps.json
+C:\Users\_\Desktop\vb\InventoryManagementSystem\InventoryManagementSystem\bin\Debug\net8.0-windows\InventoryManagementSystem.runtimeconfig.json
+C:\Users\_\Desktop\vb\InventoryManagementSystem\InventoryManagementSystem\bin\Debug\net8.0-windows\InventoryManagementSystem.dll
+C:\Users\_\Desktop\vb\InventoryManagementSystem\InventoryManagementSystem\bin\Debug\net8.0-windows\InventoryManagementSystem.pdb
+C:\Users\_\Desktop\vb\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0-windows\InventoryManagementSystem.Form1.resources
+C:\Users\_\Desktop\vb\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0-windows\InventoryManagementSystem.vbproj.GenerateResource.cache
+C:\Users\_\Desktop\vb\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0-windows\InventoryManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\_\Desktop\vb\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0-windows\InventoryManagementSystem.AssemblyInfoInputs.cache
+C:\Users\_\Desktop\vb\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0-windows\InventoryManagementSystem.AssemblyInfo.vb
+C:\Users\_\Desktop\vb\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0-windows\InventoryManagementSystem.vbproj.CoreCompileInputs.cache
+C:\Users\_\Desktop\vb\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0-windows\InventoryManagementSystem.dll
+C:\Users\_\Desktop\vb\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0-windows\refint\InventoryManagementSystem.dll
+C:\Users\_\Desktop\vb\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0-windows\InventoryManagementSystem.pdb
+C:\Users\_\Desktop\vb\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0-windows\InventoryManagementSystem.genruntimeconfig.cache
+C:\Users\_\Desktop\vb\InventoryManagementSystem\InventoryManagementSystem\obj\Debug\net8.0-windows\ref\InventoryManagementSystem.dll
