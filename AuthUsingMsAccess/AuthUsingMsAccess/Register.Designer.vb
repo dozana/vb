@@ -1,0 +1,166 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class Register
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Me.btn_register = New System.Windows.Forms.Button()
+        Me.lbl_login = New System.Windows.Forms.Label()
+        Me.txt_username = New System.Windows.Forms.TextBox()
+        Me.txt_password = New System.Windows.Forms.TextBox()
+        Me.lbl_password = New System.Windows.Forms.Label()
+        Me.lbl_username = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.btn_login = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'btn_register
+        '
+        Me.btn_register.Location = New System.Drawing.Point(146, 248)
+        Me.btn_register.Name = "btn_register"
+        Me.btn_register.Size = New System.Drawing.Size(80, 26)
+        Me.btn_register.TabIndex = 10
+        Me.btn_register.Text = "Register"
+        Me.btn_register.UseVisualStyleBackColor = True
+        '
+        'lbl_login
+        '
+        Me.lbl_login.AutoSize = True
+        Me.lbl_login.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_login.Location = New System.Drawing.Point(93, 35)
+        Me.lbl_login.Name = "lbl_login"
+        Me.lbl_login.Size = New System.Drawing.Size(104, 29)
+        Me.lbl_login.TabIndex = 11
+        Me.lbl_login.Text = "Register"
+        '
+        'txt_username
+        '
+        Me.txt_username.Location = New System.Drawing.Point(111, 168)
+        Me.txt_username.Name = "txt_username"
+        Me.txt_username.Size = New System.Drawing.Size(133, 20)
+        Me.txt_username.TabIndex = 6
+        '
+        'txt_password
+        '
+        Me.txt_password.Location = New System.Drawing.Point(111, 194)
+        Me.txt_password.Name = "txt_password"
+        Me.txt_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txt_password.Size = New System.Drawing.Size(133, 20)
+        Me.txt_password.TabIndex = 8
+        '
+        'lbl_password
+        '
+        Me.lbl_password.AutoSize = True
+        Me.lbl_password.Location = New System.Drawing.Point(40, 197)
+        Me.lbl_password.Name = "lbl_password"
+        Me.lbl_password.Size = New System.Drawing.Size(53, 13)
+        Me.lbl_password.TabIndex = 7
+        Me.lbl_password.Text = "Password"
+        '
+        'lbl_username
+        '
+        Me.lbl_username.AutoSize = True
+        Me.lbl_username.Location = New System.Drawing.Point(38, 171)
+        Me.lbl_username.Name = "lbl_username"
+        Me.lbl_username.Size = New System.Drawing.Size(55, 13)
+        Me.lbl_username.TabIndex = 5
+        Me.lbl_username.Text = "Username"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(111, 116)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(133, 20)
+        Me.TextBox1.TabIndex = 13
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(111, 142)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TextBox2.Size = New System.Drawing.Size(133, 20)
+        Me.TextBox2.TabIndex = 15
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(35, 145)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(58, 13)
+        Me.Label1.TabIndex = 14
+        Me.Label1.Text = "Last Name"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(36, 119)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(57, 13)
+        Me.Label2.TabIndex = 12
+        Me.Label2.Text = "First Name"
+        '
+        'btn_login
+        '
+        Me.btn_login.Location = New System.Drawing.Point(60, 248)
+        Me.btn_login.Name = "btn_login"
+        Me.btn_login.Size = New System.Drawing.Size(80, 26)
+        Me.btn_login.TabIndex = 9
+        Me.btn_login.Text = "Login"
+        Me.btn_login.UseVisualStyleBackColor = True
+        '
+        'Register
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(284, 361)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.btn_login)
+        Me.Controls.Add(Me.btn_register)
+        Me.Controls.Add(Me.lbl_login)
+        Me.Controls.Add(Me.txt_username)
+        Me.Controls.Add(Me.txt_password)
+        Me.Controls.Add(Me.lbl_password)
+        Me.Controls.Add(Me.lbl_username)
+        Me.Name = "Register"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Register"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+    Friend WithEvents btn_register As Button
+    Friend WithEvents lbl_login As Label
+    Friend WithEvents txt_username As TextBox
+    Friend WithEvents txt_password As TextBox
+    Friend WithEvents lbl_password As Label
+    Friend WithEvents lbl_username As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents btn_login As Button
+End Class

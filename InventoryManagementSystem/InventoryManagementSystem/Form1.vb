@@ -4,6 +4,9 @@
             GroupBox1.Visible = False
         Else
             MessageBox.Show("You have entered an incorrect login details", "Closing Exams", MessageBoxButtons.OK, MessageBoxIcon.Question)
+            txtPassword.Clear()
+            txtUsername.Clear()
+            txtUsername.Focus()
         End If
     End Sub
 
@@ -13,6 +16,14 @@
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        Dim result = MessageBox.Show("Are you shure you would like to exit?", "Closing Exams", MessageBoxButtons.OK, MessageBoxIcon.Question)
+
+        If (result = DialogResult.Yes) Then
+            Application.Exit()
+        End If
+    End Sub
+
+    Private Sub btnEnd_Click(sender As Object, e As EventArgs) Handles btnEnd.Click
         Dim result = MessageBox.Show("Are you shure you would like to exit?", "Closing Exams", MessageBoxButtons.OK, MessageBoxIcon.Question)
 
         If (result = DialogResult.Yes) Then
