@@ -28,16 +28,18 @@ Partial Class Register
         Me.txt_password = New System.Windows.Forms.TextBox()
         Me.lbl_password = New System.Windows.Forms.Label()
         Me.lbl_username = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txt_firstName = New System.Windows.Forms.TextBox()
+        Me.txt_lastName = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.btn_login = New System.Windows.Forms.Button()
+        Me.txt_email = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btn_register
         '
-        Me.btn_register.Location = New System.Drawing.Point(146, 248)
+        Me.btn_register.Location = New System.Drawing.Point(55, 261)
         Me.btn_register.Name = "btn_register"
         Me.btn_register.Size = New System.Drawing.Size(80, 26)
         Me.btn_register.TabIndex = 10
@@ -56,14 +58,14 @@ Partial Class Register
         '
         'txt_username
         '
-        Me.txt_username.Location = New System.Drawing.Point(111, 168)
+        Me.txt_username.Location = New System.Drawing.Point(111, 194)
         Me.txt_username.Name = "txt_username"
         Me.txt_username.Size = New System.Drawing.Size(133, 20)
         Me.txt_username.TabIndex = 6
         '
         'txt_password
         '
-        Me.txt_password.Location = New System.Drawing.Point(111, 194)
+        Me.txt_password.Location = New System.Drawing.Point(111, 220)
         Me.txt_password.Name = "txt_password"
         Me.txt_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txt_password.Size = New System.Drawing.Size(133, 20)
@@ -72,7 +74,7 @@ Partial Class Register
         'lbl_password
         '
         Me.lbl_password.AutoSize = True
-        Me.lbl_password.Location = New System.Drawing.Point(40, 197)
+        Me.lbl_password.Location = New System.Drawing.Point(52, 223)
         Me.lbl_password.Name = "lbl_password"
         Me.lbl_password.Size = New System.Drawing.Size(53, 13)
         Me.lbl_password.TabIndex = 7
@@ -81,31 +83,31 @@ Partial Class Register
         'lbl_username
         '
         Me.lbl_username.AutoSize = True
-        Me.lbl_username.Location = New System.Drawing.Point(38, 171)
+        Me.lbl_username.Location = New System.Drawing.Point(50, 197)
         Me.lbl_username.Name = "lbl_username"
         Me.lbl_username.Size = New System.Drawing.Size(55, 13)
         Me.lbl_username.TabIndex = 5
         Me.lbl_username.Text = "Username"
         '
-        'TextBox1
+        'txt_firstName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(111, 116)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(133, 20)
-        Me.TextBox1.TabIndex = 13
+        Me.txt_firstName.Location = New System.Drawing.Point(111, 116)
+        Me.txt_firstName.Name = "txt_firstName"
+        Me.txt_firstName.Size = New System.Drawing.Size(133, 20)
+        Me.txt_firstName.TabIndex = 13
         '
-        'TextBox2
+        'txt_lastName
         '
-        Me.TextBox2.Location = New System.Drawing.Point(111, 142)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(133, 20)
-        Me.TextBox2.TabIndex = 15
+        Me.txt_lastName.Location = New System.Drawing.Point(111, 142)
+        Me.txt_lastName.Name = "txt_lastName"
+        Me.txt_lastName.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txt_lastName.Size = New System.Drawing.Size(133, 20)
+        Me.txt_lastName.TabIndex = 15
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(35, 145)
+        Me.Label1.Location = New System.Drawing.Point(47, 145)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(58, 13)
         Me.Label1.TabIndex = 14
@@ -114,7 +116,7 @@ Partial Class Register
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(36, 119)
+        Me.Label2.Location = New System.Drawing.Point(48, 119)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(57, 13)
         Me.Label2.TabIndex = 12
@@ -122,20 +124,39 @@ Partial Class Register
         '
         'btn_login
         '
-        Me.btn_login.Location = New System.Drawing.Point(60, 248)
+        Me.btn_login.Location = New System.Drawing.Point(164, 261)
         Me.btn_login.Name = "btn_login"
         Me.btn_login.Size = New System.Drawing.Size(80, 26)
         Me.btn_login.TabIndex = 9
         Me.btn_login.Text = "Login"
         Me.btn_login.UseVisualStyleBackColor = True
         '
+        'txt_email
+        '
+        Me.txt_email.Location = New System.Drawing.Point(111, 168)
+        Me.txt_email.Name = "txt_email"
+        Me.txt_email.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txt_email.Size = New System.Drawing.Size(133, 20)
+        Me.txt_email.TabIndex = 17
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(69, 171)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(36, 13)
+        Me.Label3.TabIndex = 16
+        Me.Label3.Text = "E-Mail"
+        '
         'Register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 361)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txt_email)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.txt_firstName)
+        Me.Controls.Add(Me.txt_lastName)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btn_login)
@@ -158,9 +179,11 @@ Partial Class Register
     Friend WithEvents txt_password As TextBox
     Friend WithEvents lbl_password As Label
     Friend WithEvents lbl_username As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txt_firstName As TextBox
+    Friend WithEvents txt_lastName As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents btn_login As Button
+    Friend WithEvents txt_email As TextBox
+    Friend WithEvents Label3 As Label
 End Class
