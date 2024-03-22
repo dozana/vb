@@ -29,6 +29,7 @@ Partial Class Login
         Me.lbl_login = New System.Windows.Forms.Label()
         Me.btn_register = New System.Windows.Forms.Button()
         Me.btn_login = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lbl_username
@@ -76,27 +77,37 @@ Partial Class Login
         '
         'btn_register
         '
-        Me.btn_register.Location = New System.Drawing.Point(147, 209)
+        Me.btn_register.Location = New System.Drawing.Point(59, 275)
         Me.btn_register.Name = "btn_register"
-        Me.btn_register.Size = New System.Drawing.Size(80, 26)
+        Me.btn_register.Size = New System.Drawing.Size(168, 26)
         Me.btn_register.TabIndex = 4
         Me.btn_register.Text = "Register"
         Me.btn_register.UseVisualStyleBackColor = True
         '
         'btn_login
         '
-        Me.btn_login.Location = New System.Drawing.Point(59, 209)
+        Me.btn_login.Location = New System.Drawing.Point(59, 193)
         Me.btn_login.Name = "btn_login"
-        Me.btn_login.Size = New System.Drawing.Size(80, 26)
+        Me.btn_login.Size = New System.Drawing.Size(168, 26)
         Me.btn_login.TabIndex = 3
         Me.btn_login.Text = "Login"
         Me.btn_login.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(124, 244)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(35, 13)
+        Me.Label1.TabIndex = 5
+        Me.Label1.Text = "- OR -"
         '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 361)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btn_login)
         Me.Controls.Add(Me.btn_register)
         Me.Controls.Add(Me.lbl_login)
@@ -119,4 +130,5 @@ Partial Class Login
     Friend WithEvents lbl_login As Label
     Friend WithEvents btn_register As Button
     Friend WithEvents btn_login As Button
+    Friend WithEvents Label1 As Label
 End Class

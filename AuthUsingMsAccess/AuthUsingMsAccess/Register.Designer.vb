@@ -32,17 +32,17 @@ Partial Class Register
         Me.txt_lastName = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.btn_login = New System.Windows.Forms.Button()
+        Me.btn_goBack = New System.Windows.Forms.Button()
         Me.txt_email = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btn_register
         '
-        Me.btn_register.Location = New System.Drawing.Point(55, 261)
+        Me.btn_register.Location = New System.Drawing.Point(111, 259)
         Me.btn_register.Name = "btn_register"
-        Me.btn_register.Size = New System.Drawing.Size(80, 26)
-        Me.btn_register.TabIndex = 10
+        Me.btn_register.Size = New System.Drawing.Size(133, 26)
+        Me.btn_register.TabIndex = 6
         Me.btn_register.Text = "Register"
         Me.btn_register.UseVisualStyleBackColor = True
         '
@@ -61,7 +61,7 @@ Partial Class Register
         Me.txt_username.Location = New System.Drawing.Point(111, 194)
         Me.txt_username.Name = "txt_username"
         Me.txt_username.Size = New System.Drawing.Size(133, 20)
-        Me.txt_username.TabIndex = 6
+        Me.txt_username.TabIndex = 4
         '
         'txt_password
         '
@@ -69,7 +69,7 @@ Partial Class Register
         Me.txt_password.Name = "txt_password"
         Me.txt_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txt_password.Size = New System.Drawing.Size(133, 20)
-        Me.txt_password.TabIndex = 8
+        Me.txt_password.TabIndex = 5
         '
         'lbl_password
         '
@@ -94,15 +94,14 @@ Partial Class Register
         Me.txt_firstName.Location = New System.Drawing.Point(111, 116)
         Me.txt_firstName.Name = "txt_firstName"
         Me.txt_firstName.Size = New System.Drawing.Size(133, 20)
-        Me.txt_firstName.TabIndex = 13
+        Me.txt_firstName.TabIndex = 1
         '
         'txt_lastName
         '
         Me.txt_lastName.Location = New System.Drawing.Point(111, 142)
         Me.txt_lastName.Name = "txt_lastName"
-        Me.txt_lastName.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txt_lastName.Size = New System.Drawing.Size(133, 20)
-        Me.txt_lastName.TabIndex = 15
+        Me.txt_lastName.TabIndex = 2
         '
         'Label1
         '
@@ -122,22 +121,21 @@ Partial Class Register
         Me.Label2.TabIndex = 12
         Me.Label2.Text = "First Name"
         '
-        'btn_login
+        'btn_goBack
         '
-        Me.btn_login.Location = New System.Drawing.Point(164, 261)
-        Me.btn_login.Name = "btn_login"
-        Me.btn_login.Size = New System.Drawing.Size(80, 26)
-        Me.btn_login.TabIndex = 9
-        Me.btn_login.Text = "Login"
-        Me.btn_login.UseVisualStyleBackColor = True
+        Me.btn_goBack.Location = New System.Drawing.Point(12, 323)
+        Me.btn_goBack.Name = "btn_goBack"
+        Me.btn_goBack.Size = New System.Drawing.Size(80, 26)
+        Me.btn_goBack.TabIndex = 7
+        Me.btn_goBack.Text = "Go Back"
+        Me.btn_goBack.UseVisualStyleBackColor = True
         '
         'txt_email
         '
         Me.txt_email.Location = New System.Drawing.Point(111, 168)
         Me.txt_email.Name = "txt_email"
-        Me.txt_email.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txt_email.Size = New System.Drawing.Size(133, 20)
-        Me.txt_email.TabIndex = 17
+        Me.txt_email.TabIndex = 3
         '
         'Label3
         '
@@ -159,7 +157,7 @@ Partial Class Register
         Me.Controls.Add(Me.txt_lastName)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.btn_login)
+        Me.Controls.Add(Me.btn_goBack)
         Me.Controls.Add(Me.btn_register)
         Me.Controls.Add(Me.lbl_login)
         Me.Controls.Add(Me.txt_username)
@@ -183,7 +181,7 @@ Partial Class Register
     Friend WithEvents txt_lastName As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents btn_login As Button
+    Friend WithEvents btn_goBack As Button
     Friend WithEvents txt_email As TextBox
     Friend WithEvents Label3 As Label
 End Class
