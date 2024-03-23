@@ -14,4 +14,4 @@ C:\Users\_\Desktop\vb\AuthUsingMsAccess\AuthUsingMsAccess\obj\Debug\AuthUsingMsA
 C:\Users\_\Desktop\vb\AuthUsingMsAccess\AuthUsingMsAccess\bin\Debug\System.Data.OleDb.dll
 C:\Users\_\Desktop\vb\AuthUsingMsAccess\AuthUsingMsAccess\bin\Debug\System.Data.OleDb.xml
 C:\Users\_\Desktop\vb\AuthUsingMsAccess\AuthUsingMsAccess\obj\Debug\AuthUsin.648B82A3.Up2Date
-C:\Users\_\Desktop\vb\AuthUsingMsAccess\AuthUsingMsAccess\bin\Debug\database.accdb
+C:\Users\_\Desktop\vb\AuthUsingMsAccess\AuthUsingMsAccess\obj\Debug\AuthUsingMsAccess.Dashboard.resources
