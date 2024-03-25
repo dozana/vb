@@ -1,0 +1,12 @@
+C:\Users\_\Desktop\vb\Contacts\Contacts\bin\Debug\Contacts.exe.config
+C:\Users\_\Desktop\vb\Contacts\Contacts\bin\Debug\Contacts.exe
+C:\Users\_\Desktop\vb\Contacts\Contacts\bin\Debug\Contacts.pdb
+C:\Users\_\Desktop\vb\Contacts\Contacts\bin\Debug\Contacts.xml
+C:\Users\_\Desktop\vb\Contacts\Contacts\obj\Debug\Contacts.vbproj.AssemblyReference.cache
+C:\Users\_\Desktop\vb\Contacts\Contacts\obj\Debug\Contacts.Form1.resources
+C:\Users\_\Desktop\vb\Contacts\Contacts\obj\Debug\Contacts.Resources.resources
+C:\Users\_\Desktop\vb\Contacts\Contacts\obj\Debug\Contacts.vbproj.GenerateResource.cache
+C:\Users\_\Desktop\vb\Contacts\Contacts\obj\Debug\Contacts.vbproj.CoreCompileInputs.cache
+C:\Users\_\Desktop\vb\Contacts\Contacts\obj\Debug\Contacts.exe
+C:\Users\_\Desktop\vb\Contacts\Contacts\obj\Debug\Contacts.xml
+C:\Users\_\Desktop\vb\Contacts\Contacts\obj\Debug\Contacts.pdb
