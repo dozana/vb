@@ -155,7 +155,7 @@ Public Class Form1
         DataGridView1.Rows.Clear()
         Try
             conn.Open()
-            Dim cmd As New MySqlCommand("SELECT * FROM `contacts` WHERE first_name LIKE '%" & search.Text & "%' OR last_name LIKE '%" & search.Text & "%' OR email LIKE '%" & search.Text & "%'", conn)
+            Dim cmd As New MySqlCommand("SELECT * FROM `contacts` WHERE id LIKE '%" & search.Text & "%' OR first_name LIKE '%" & search.Text & "%' OR last_name LIKE '%" & search.Text & "%' OR email LIKE '%" & search.Text & "%'", conn)
 
             dr = cmd.ExecuteReader
             While dr.Read
@@ -173,5 +173,44 @@ Public Class Form1
         id.ReadOnly = False
         btn_save.Enabled = True
         DGV_load()
+    End Sub
+
+    Private Sub btn_next_Click(sender As Object, e As EventArgs) Handles btn_next.Click
+        Dim currentRowIndex As Integer = DataGridView1.CurrentRow.Index
+        Dim nextRowIndex As Integer = currentRowIndex + 1
+
+        ' Check if the next row index is within the bounds
+        If nextRowIndex < DataGridView1.Rows.Count Then
+            DataGridView1.CurrentCell = DataGridView1.Rows(nextRowIndex).Cells(0) ' Assuming you want to select the first cell in the next row
+        End If
+    End Sub
+
+    Private Sub btn_previous_Click(sender As Object, e As EventArgs) Handles btn_previous.Click
+        Dim currentRowIndex As Integer = DataGridView1.CurrentRow.Index
+        Dim previousRowIndex As Integer = currentRowIndex - 1
+
+        ' Check if the previous row index is within the bounds
+        If previousRowIndex >= 0 Then
+            DataGridView1.CurrentCell = DataGridView1.Rows(previousRowIndex).Cells(0) ' Assuming you want to select the first cell in the previous row
+        End If
+    End Sub
+
+    Private Sub btn_first_Click(sender As Object, e As EventArgs) Handles btn_first.Click
+        ' Move to the first row
+        If DataGridView1.Rows.Count > 0 Then
+            DataGridView1.CurrentCell = DataGridView1.Rows(0).Cells(0)
+        End If
+    End Sub
+
+    Private Sub btn_last_Click(sender As Object, e As EventArgs) Handles btn_last.Click
+        ' Move to the last row
+        Dim lastRowIndex As Integer = DataGridView1.Rows.Count - 1
+        If lastRowIndex >= 0 Then
+            DataGridView1.CurrentCell = DataGridView1.Rows(lastRowIndex).Cells(0)
+        End If
+    End Sub
+
+    Private Sub btn_close_Click(sender As Object, e As EventArgs) Handles btn_close.Click
+        Close()
     End Sub
 End Class

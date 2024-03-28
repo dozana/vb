@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.lbl_firstName = New System.Windows.Forms.Label()
         Me.lbl_lastName = New System.Windows.Forms.Label()
         Me.lbl_email = New System.Windows.Forms.Label()
@@ -48,13 +49,18 @@ Partial Class Form1
         Me.id = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btn_refresh = New System.Windows.Forms.Button()
+        Me.btn_next = New System.Windows.Forms.Button()
+        Me.btn_first = New System.Windows.Forms.Button()
+        Me.btn_last = New System.Windows.Forms.Button()
+        Me.btn_previous = New System.Windows.Forms.Button()
+        Me.btn_close = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lbl_firstName
         '
         Me.lbl_firstName.AutoSize = True
-        Me.lbl_firstName.Location = New System.Drawing.Point(9, 53)
+        Me.lbl_firstName.Location = New System.Drawing.Point(9, 60)
         Me.lbl_firstName.Name = "lbl_firstName"
         Me.lbl_firstName.Size = New System.Drawing.Size(57, 13)
         Me.lbl_firstName.TabIndex = 0
@@ -63,7 +69,7 @@ Partial Class Form1
         'lbl_lastName
         '
         Me.lbl_lastName.AutoSize = True
-        Me.lbl_lastName.Location = New System.Drawing.Point(9, 95)
+        Me.lbl_lastName.Location = New System.Drawing.Point(9, 102)
         Me.lbl_lastName.Name = "lbl_lastName"
         Me.lbl_lastName.Size = New System.Drawing.Size(58, 13)
         Me.lbl_lastName.TabIndex = 1
@@ -72,7 +78,7 @@ Partial Class Form1
         'lbl_email
         '
         Me.lbl_email.AutoSize = True
-        Me.lbl_email.Location = New System.Drawing.Point(12, 139)
+        Me.lbl_email.Location = New System.Drawing.Point(12, 146)
         Me.lbl_email.Name = "lbl_email"
         Me.lbl_email.Size = New System.Drawing.Size(36, 13)
         Me.lbl_email.TabIndex = 2
@@ -80,28 +86,28 @@ Partial Class Form1
         '
         'firstName
         '
-        Me.firstName.Location = New System.Drawing.Point(12, 69)
+        Me.firstName.Location = New System.Drawing.Point(12, 76)
         Me.firstName.Name = "firstName"
         Me.firstName.Size = New System.Drawing.Size(192, 20)
         Me.firstName.TabIndex = 1
         '
         'lastName
         '
-        Me.lastName.Location = New System.Drawing.Point(12, 111)
+        Me.lastName.Location = New System.Drawing.Point(12, 118)
         Me.lastName.Name = "lastName"
         Me.lastName.Size = New System.Drawing.Size(192, 20)
         Me.lastName.TabIndex = 2
         '
         'email
         '
-        Me.email.Location = New System.Drawing.Point(12, 155)
+        Me.email.Location = New System.Drawing.Point(12, 162)
         Me.email.Name = "email"
         Me.email.Size = New System.Drawing.Size(192, 20)
         Me.email.TabIndex = 3
         '
         'btn_save
         '
-        Me.btn_save.Location = New System.Drawing.Point(12, 282)
+        Me.btn_save.Location = New System.Drawing.Point(11, 297)
         Me.btn_save.Name = "btn_save"
         Me.btn_save.Size = New System.Drawing.Size(60, 23)
         Me.btn_save.TabIndex = 21
@@ -110,7 +116,7 @@ Partial Class Form1
         '
         'birthDate
         '
-        Me.birthDate.Location = New System.Drawing.Point(12, 199)
+        Me.birthDate.Location = New System.Drawing.Point(12, 206)
         Me.birthDate.Name = "birthDate"
         Me.birthDate.Size = New System.Drawing.Size(192, 20)
         Me.birthDate.TabIndex = 4
@@ -118,7 +124,7 @@ Partial Class Form1
         'lbl_birthDate
         '
         Me.lbl_birthDate.AutoSize = True
-        Me.lbl_birthDate.Location = New System.Drawing.Point(9, 183)
+        Me.lbl_birthDate.Location = New System.Drawing.Point(9, 190)
         Me.lbl_birthDate.Name = "lbl_birthDate"
         Me.lbl_birthDate.Size = New System.Drawing.Size(54, 13)
         Me.lbl_birthDate.TabIndex = 8
@@ -128,7 +134,7 @@ Partial Class Form1
         '
         Me.zodiac.FormattingEnabled = True
         Me.zodiac.Items.AddRange(New Object() {"Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"})
-        Me.zodiac.Location = New System.Drawing.Point(12, 244)
+        Me.zodiac.Location = New System.Drawing.Point(12, 251)
         Me.zodiac.Name = "zodiac"
         Me.zodiac.Size = New System.Drawing.Size(192, 21)
         Me.zodiac.TabIndex = 5
@@ -136,7 +142,7 @@ Partial Class Form1
         'lbl_zodiac
         '
         Me.lbl_zodiac.AutoSize = True
-        Me.lbl_zodiac.Location = New System.Drawing.Point(13, 228)
+        Me.lbl_zodiac.Location = New System.Drawing.Point(13, 235)
         Me.lbl_zodiac.Name = "lbl_zodiac"
         Me.lbl_zodiac.Size = New System.Drawing.Size(40, 13)
         Me.lbl_zodiac.TabIndex = 10
@@ -144,7 +150,7 @@ Partial Class Form1
         '
         'btn_edit
         '
-        Me.btn_edit.Location = New System.Drawing.Point(78, 282)
+        Me.btn_edit.Location = New System.Drawing.Point(77, 297)
         Me.btn_edit.Name = "btn_edit"
         Me.btn_edit.Size = New System.Drawing.Size(60, 23)
         Me.btn_edit.TabIndex = 22
@@ -153,7 +159,7 @@ Partial Class Form1
         '
         'btn_delete
         '
-        Me.btn_delete.Location = New System.Drawing.Point(144, 282)
+        Me.btn_delete.Location = New System.Drawing.Point(143, 297)
         Me.btn_delete.Name = "btn_delete"
         Me.btn_delete.Size = New System.Drawing.Size(60, 23)
         Me.btn_delete.TabIndex = 23
@@ -162,7 +168,7 @@ Partial Class Form1
         '
         'btn_clear
         '
-        Me.btn_clear.Location = New System.Drawing.Point(12, 311)
+        Me.btn_clear.Location = New System.Drawing.Point(11, 326)
         Me.btn_clear.Name = "btn_clear"
         Me.btn_clear.Size = New System.Drawing.Size(60, 23)
         Me.btn_clear.TabIndex = 24
@@ -171,13 +177,14 @@ Partial Class Form1
         '
         'DataGridView1
         '
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
-        Me.DataGridView1.Location = New System.Drawing.Point(223, 67)
+        Me.DataGridView1.Location = New System.Drawing.Point(223, 118)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersVisible = False
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(349, 263)
+        Me.DataGridView1.Size = New System.Drawing.Size(571, 259)
         Me.DataGridView1.TabIndex = 25
         '
         'Column1
@@ -224,15 +231,15 @@ Partial Class Form1
         '
         'search
         '
-        Me.search.Location = New System.Drawing.Point(223, 25)
+        Me.search.Location = New System.Drawing.Point(223, 32)
         Me.search.Name = "search"
-        Me.search.Size = New System.Drawing.Size(349, 20)
+        Me.search.Size = New System.Drawing.Size(571, 20)
         Me.search.TabIndex = 27
         '
         'lbl_search
         '
         Me.lbl_search.AutoSize = True
-        Me.lbl_search.Location = New System.Drawing.Point(220, 9)
+        Me.lbl_search.Location = New System.Drawing.Point(220, 16)
         Me.lbl_search.Name = "lbl_search"
         Me.lbl_search.Size = New System.Drawing.Size(41, 13)
         Me.lbl_search.TabIndex = 26
@@ -240,15 +247,15 @@ Partial Class Form1
         '
         'id
         '
-        Me.id.Location = New System.Drawing.Point(12, 25)
+        Me.id.Location = New System.Drawing.Point(12, 32)
         Me.id.Name = "id"
         Me.id.Size = New System.Drawing.Size(192, 20)
-        Me.id.TabIndex = 29
+        Me.id.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(9, 9)
+        Me.Label1.Location = New System.Drawing.Point(9, 16)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(18, 13)
         Me.Label1.TabIndex = 28
@@ -256,18 +263,68 @@ Partial Class Form1
         '
         'btn_refresh
         '
-        Me.btn_refresh.Location = New System.Drawing.Point(78, 311)
+        Me.btn_refresh.Location = New System.Drawing.Point(77, 326)
         Me.btn_refresh.Name = "btn_refresh"
         Me.btn_refresh.Size = New System.Drawing.Size(60, 23)
         Me.btn_refresh.TabIndex = 30
         Me.btn_refresh.Text = "Refresh"
         Me.btn_refresh.UseVisualStyleBackColor = True
         '
+        'btn_next
+        '
+        Me.btn_next.Location = New System.Drawing.Point(304, 76)
+        Me.btn_next.Name = "btn_next"
+        Me.btn_next.Size = New System.Drawing.Size(75, 23)
+        Me.btn_next.TabIndex = 31
+        Me.btn_next.Text = "Next"
+        Me.btn_next.UseVisualStyleBackColor = True
+        '
+        'btn_first
+        '
+        Me.btn_first.Location = New System.Drawing.Point(385, 76)
+        Me.btn_first.Name = "btn_first"
+        Me.btn_first.Size = New System.Drawing.Size(75, 23)
+        Me.btn_first.TabIndex = 32
+        Me.btn_first.Text = "First"
+        Me.btn_first.UseVisualStyleBackColor = True
+        '
+        'btn_last
+        '
+        Me.btn_last.Location = New System.Drawing.Point(466, 76)
+        Me.btn_last.Name = "btn_last"
+        Me.btn_last.Size = New System.Drawing.Size(75, 23)
+        Me.btn_last.TabIndex = 33
+        Me.btn_last.Text = "Last"
+        Me.btn_last.UseVisualStyleBackColor = True
+        '
+        'btn_previous
+        '
+        Me.btn_previous.Location = New System.Drawing.Point(223, 76)
+        Me.btn_previous.Name = "btn_previous"
+        Me.btn_previous.Size = New System.Drawing.Size(75, 23)
+        Me.btn_previous.TabIndex = 34
+        Me.btn_previous.Text = "Previous"
+        Me.btn_previous.UseVisualStyleBackColor = True
+        '
+        'btn_close
+        '
+        Me.btn_close.Location = New System.Drawing.Point(547, 76)
+        Me.btn_close.Name = "btn_close"
+        Me.btn_close.Size = New System.Drawing.Size(75, 23)
+        Me.btn_close.TabIndex = 35
+        Me.btn_close.Text = "Close"
+        Me.btn_close.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(584, 361)
+        Me.ClientSize = New System.Drawing.Size(806, 389)
+        Me.Controls.Add(Me.btn_close)
+        Me.Controls.Add(Me.btn_previous)
+        Me.Controls.Add(Me.btn_last)
+        Me.Controls.Add(Me.btn_first)
+        Me.Controls.Add(Me.btn_next)
         Me.Controls.Add(Me.btn_refresh)
         Me.Controls.Add(Me.id)
         Me.Controls.Add(Me.Label1)
@@ -288,6 +345,7 @@ Partial Class Form1
         Me.Controls.Add(Me.lbl_email)
         Me.Controls.Add(Me.lbl_lastName)
         Me.Controls.Add(Me.lbl_firstName)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "My Contacts"
@@ -323,4 +381,9 @@ Partial Class Form1
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
     Friend WithEvents btn_refresh As Button
+    Friend WithEvents btn_next As Button
+    Friend WithEvents btn_first As Button
+    Friend WithEvents btn_last As Button
+    Friend WithEvents btn_previous As Button
+    Friend WithEvents btn_close As Button
 End Class
